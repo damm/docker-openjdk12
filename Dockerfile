@@ -1,9 +1,9 @@
-FROM    stackbrew/ubuntu:12.04
+FROM    damm/ubuntu:14.04
 MAINTAINER <scott@likens.us>
 RUN sed -i.bak 's/main$/main universe/' /etc/apt/sources.list
 RUN apt-get update
 RUN dpkg-divert --local --rename --add /sbin/initctl
-RUN apt-get update && apt-get -y install python-software-properties wget curl
+RUN apt-get update && apt-get -y install software-properties-common wget curl
 RUN add-apt-repository ppa:webupd8team/java
 RUN apt-get update
 RUN echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections
