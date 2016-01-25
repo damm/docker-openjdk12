@@ -1,3 +1,7 @@
+### Build status
+
+[![Build Status](https://travis-ci.org/damm/docker-java8.png)](https://travis-ci.org/damm/docker-java8)
+
 Java8
 ======
 
