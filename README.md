@@ -1,19 +1,19 @@
 ### Build status
 
-[![Build Status](https://travis-ci.org/damm/docker-java8.png)](https://travis-ci.org/damm/docker-java8)
+[![Build Status](https://travis-ci.org/damm/docker-openjdk8.png)](https://travis-ci.org/damm/docker-openjdk8)
 
 Java8
 ======
 
 
-This image installs Java8 using [webup8team](http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html) PPA
+This image installs OpenJDK8 via openjdk-r/ppa
 
 Usage
 ======
 
 Reference this in your `Dockerfile` like below.
 ```shell
-FROM damm/java8
+FROM damm/openjdk8
 ```
 
 License and Author
