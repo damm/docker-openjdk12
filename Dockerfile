@@ -1,4 +1,4 @@
-FROM    damm/ubuntu:14.04
+FROM damm/ubuntu:14.04
 MAINTAINER <scott@likens.us>
 RUN sed -i.bak 's/main$/main universe/' /etc/apt/sources.list
 RUN apt-get update
